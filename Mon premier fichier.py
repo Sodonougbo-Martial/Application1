@@ -1,43 +1,47 @@
 def add(x, y):
-        return x + y
+            return x + y
 
     def subtract(x, y):
-            return x - y
+                return x - y
 
         def multiply(x, y):
-                return x * y
+                    return x * y
 
             def divide(x, y):
-                    if y != 0:
-                                return x / y
-                    else:
-                                return "Erreur : division par zéro impossible"
+                        if y != 0:
+                                        return x / y
+                        else:
+                                        return "Erreur : division par zéro impossible"
 
-                            print("Sélectionnez l'opération:")
-                            print("1. Addition")
-                            print("2. Soustraction")
-                            print("3. Multiplication")
-                            print("4. Division")
+                                def power(x, y):
+                                            return x ** y
 
-                            choice = input("Entrez votre choix (1/2/3/4): ")
+                                    def calculate(operator, x, y):
+                                                if operator == '+':
+                                                                return add(x, y)
+                                                elif operator == '-':
+                                                                return subtract(x, y)
+                                                elif operator == '*':
+                                                                return multiply(x, y)
+                                                elif operator == '/':
+                                                                return divide(x, y)
+                                                elif operator == '^':
+                                                                return power(x, y)
+                                                else:
+                                                                return "Opération invalide"
 
-                            num1 = float(input("Entrez le premier nombre: "))
-                            num2 = float(input("Entrez le deuxième nombre: "))
+                                                        print("Sélectionnez l'opération:")
+                                                        print("+ : Addition")
+                                                        print("- : Soustraction")
+                                                        print("* : Multiplication")
+                                                        print("/ : Division")
+                                                        print("^ : Puissance")
 
-                            if choice == '1':
-                                    print(num1, "+", num2, "=", add(num1, num2))
+                                                        operator = input("Entrez l'opérateur: ")
+                                                        num1 = float(input("Entrez le premier nombre: "))
+                                                        num2 = float(input("Entrez le deuxième nombre: "))
 
-                            elif choice == '2':
-                                    print(num1, "-", num2, "=", subtract(num1, num2))
-
-                            elif choice == '3':
-                                    print(num1, "*", num2, "=", multiply(num1, num2))
-
-                            elif choice == '4':
-                                    print(num1, "/", num2, "=", divide(num1, num2))
-
-                            else:cc
-                                    print("Choix invalide")
-                                    
+                                                        result = calculate(operator, num1, num2)
+                                                        print(f"{num1} {operator} {num2} = {result}")
 
                                     
