@@ -1,0 +1,4 @@
+GREEN='\033[0;32m'
+echo -e "${GREEN} Bienvenue les CodeWarriors ! Vous êtes les 5 prochains héros du JavaScript.
+Préparez-vous à une aventure épique. Où chaque ligne de code sera un défi à relever.
+Ensemble, nous allons coder jusqu'à l'aube, Déjouer les bugs les plus coriaces, Et devenir des maîtres incontestés du web."

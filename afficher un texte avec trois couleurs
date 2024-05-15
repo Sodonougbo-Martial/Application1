@@ -1,0 +1,5 @@
+RED='\e[0;31m'
+GREEN='\033[0;32m'
+CYAN='\033[0;36m'
+YELLOW='\033[1;33m'
+echo -e "${RED}Nous somme un groupe de trois apprenant novise.${CYAN}Deux d'entre nous préfèrent la couleur bleu.${GREEN}Par contre deux autres ont un penchant pour la vivacité de la couleur verte. ${YELLOW}Le dernier se surnomme l'eclaire jaune de konoha. En reference a sa couleur jaune favorite et au personnage de son manga prefere."
