@@ -1,0 +1,10 @@
+#!/bin/bash
+
+read -p 'Size: ' sz
+
+topbottom=$(yes '*' | head -n "$sz" | tr -d '\n' )
+printf -v midrows '*%*s*' "$((sz-2))" ""
+
+printf '%s\n' "$topbottom"
+yes "$midrows" | head -n "$((sz-2))"
+printf '%s\n' "$topbottom"
