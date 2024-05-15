@@ -1,0 +1,4 @@
+ GREEN='\033[0;32m'
+ echo -e "${GREEN} We can do it."
+ We can do it.
+ 

@@ -1,0 +1,5 @@
+  GREEN='\033[0;32m'
+  CYAN='\033[0;36m'
+  YELLOW='\033[1;33m'
+  echo -e "${GREEN} On traverse au feu vert. ${CYAN} Dans votre voiture bleu ciel, ${YELLOW} au jaune vous devrez ralentir."
+  On traverse au feu vert.  Dans votre voiture bleu ciel,  au jaune vous devrez ralentir.
