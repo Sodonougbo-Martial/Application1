@@ -1,10 +1,9 @@
 #!/bin/bash
-
-read -p 'Size: ' sz
-
-topbottom=$(yes '*' | head -n "$sz" | tr -d '\n' )
-printf -v midrows '*%*s*' "$((sz-2))" ""
-
-printf '%s\n' "$topbottom"
-yes "$midrows" | head -n "$((sz-2))"
-printf '%s\n' "$topbottom"
+echo -e "Entrez un nombre: \c"
+read x
+for ((i=0;i<=x;i++)) ; do
+    for ((j=0;j<=i;j++)) ; do
+	echo -n "*"
+    done
+    echo -e "\n"
+    done
